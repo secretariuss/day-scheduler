@@ -7,9 +7,9 @@ SO THAT I can manage my time effectively
 
 ## Description
 
- Work Day Scheduler starts and current day is displayed at the top of the calendar. Scheduler presented with time blocks for standard business hours of 9am to 5pm. 
- 
- when the start button is pressed. It is necessary to give answers to the questions. If the answer is wrong then the time is subtracted from the timer. When all the questions are answered or the timer reaches 0 and the game is over. User can save their result and display the result on the screen.
+ Work Day Scheduler starts and current day is displayed at the top of the calendar. Scheduler presented with time blocks for standard business hours of 9am to 5pm.
+ Each time block is color-coded to indicate whether it is in the past, present, or future. User can change event and save it in local storage. When user refresh the 
+ page events steal populated in calendar fields. 
 
 ## Gitpage reference
 https://

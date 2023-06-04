@@ -268,7 +268,7 @@ function getHours() {
     var hoursScheduler = $(this).attr("id").split("hour-")[1];
     console.log('currentHours  ', currentHours);
     console.log('hoursScheduler   ', hoursScheduler);
-    if ( hoursScheduler < currentHours) {
+    if (hoursScheduler < currentHours) {
       $(this).addClass('past');
     } else if (currentHours == hoursScheduler) {
       $(this).addClass('present');
