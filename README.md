@@ -7,7 +7,9 @@ SO THAT I can manage my time effectively
 
 ## Description
 
- Work Day Scheduler starts when the start button is pressed. It is necessary to give answers to the questions. If the answer is wrong then the time is subtracted from the timer. When all the questions are answered or the timer reaches 0 and the game is over. User can save their result and display the result on the screen.
+ Work Day Scheduler starts and current day is displayed at the top of the calendar. Scheduler presented with time blocks for standard business hours of 9am to 5pm. 
+ 
+ when the start button is pressed. It is necessary to give answers to the questions. If the answer is wrong then the time is subtracted from the timer. When all the questions are answered or the timer reaches 0 and the game is over. User can save their result and display the result on the screen.
 
 ## Gitpage reference
 https://
@@ -16,8 +18,9 @@ https://
 
 The following scrshots shows the web application's:
 
-![scrshot1](./assets/images/pg1.GIF)
+![scrshot1](./assets/images/pg1.PNG)
 ![scrshot2](./assets/images/pg2.PNG)
+![scrshot3](./assets/images/pgGif.GIF)
 
 ## Acceptance Criteria
 GIVEN I am using a daily planner to create a schedule

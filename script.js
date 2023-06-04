@@ -1,6 +1,14 @@
 var container = $('#container')
 var date = dayjs();
 var currentHourId = "hour-" + dayjs().get('hour');
+var cutterntDay = $('#currentDay');
+var saveBtn = document.querySelector('.saveBtn');
+var currentHours = dayjs().get('hour');
+
+var showCurrentDay = function () {
+  var date = dayjs();
+  $('#currentDay').text(date.format('dddd, MMMM D') + 'th');
+}
 
 function createDiv1() {
 
@@ -105,7 +113,7 @@ function createDiv4() {
 function createDiv5() {
 
   $("<div>", {
-    'id': "hour-1",
+    'id': "hour-13",
     'class': "row time-block",
   }).appendTo(this.container)
     .append($("<div>", {
@@ -203,15 +211,14 @@ function createDiv8() {
   saveInput();
 }
 
-
 function createDiv9() {
 
   $("<div>", {
-    'id': "hour-" + dayjs().get('hour'),
+    'id': "hour-17",
     'class': "row time-block",
   }).appendTo(this.container)
     .append($("<div>", {
-      'text': date.format('h A').split(' ').join(''),
+      'text': "5PM",
       'class': "col-2 col-md-1 hour text-center py-3",
     }))
     .append($("<textarea>", {
@@ -229,18 +236,31 @@ function createDiv9() {
   saveInput();
 }
 
+//only for example always current hour
+// function alwaysCurrentHour() {
 
-var cutterntDay = $('#currentDay');
-var saveBtn = document.querySelector('.saveBtn');
+//   $("<div>", {
+//     'id': "hour-" + dayjs().get('hour'),
+//     'class': "row time-block",
+//   }).appendTo(this.container)
+//     .append($("<div>", {
+//       'text': date.format('h A').split(' ').join(''),
+//       'class': "col-2 col-md-1 hour text-center py-3",
+//     }))
+//     .append($("<textarea>", {
+//       'rows': "3",
+//       'class': "col-8 col-md-10 description",
+//     }))
+//     .append($("<button>", {
+//       'aria-label': "save",
+//       'class': "btn saveBtn col-2 col-md-1",
+//     }).append($("<i>", {
+//       'class': "fas fa-save",
+//       'aria-hidden': "true"
+//     })))
 
-var currentHours = dayjs().get('hour');
-
-
-var showCurrentDay = function () {
-  var date = dayjs();
-  $('#currentDay').text(date.format('dddd, MMMM D') + 'th');
-
-}
+//   saveInput();
+// }
 
 function getHours() {
 
@@ -275,11 +295,10 @@ function saveInput() {
   $("#hour-10 .description").val(localStorage.getItem("hour-10"));
   $("#hour-11 .description").val(localStorage.getItem("hour-11"));
   $("#hour-12 .description").val(localStorage.getItem("hour-12"));
-  $("#hour-1 .description").val(localStorage.getItem("hour-1"));
-  $("#hour-2 .description").val(localStorage.getItem("hour-2"));
-  $("#hour-3 .description").val(localStorage.getItem("hour-3"));
-  $("#hour-4 .description").val(localStorage.getItem("hour-4"));
-  $("#hour-5 .description").val(localStorage.getItem("hour-5"));
+  $("#hour-13 .description").val(localStorage.getItem("hour-13"));
+  $("#hour-14 .description").val(localStorage.getItem("hour-14"));
+  $("#hour-15 .description").val(localStorage.getItem("hour-15"));
+  $("#hour-16 .description").val(localStorage.getItem("hour-16"));
 }
 
 createDiv1();
@@ -291,5 +310,6 @@ createDiv6();
 createDiv7();
 createDiv8();
 createDiv9();
+//alwaysCurrentHour();
 getHours();
 showCurrentDay();
