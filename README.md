@@ -20,7 +20,6 @@ The following scrshots shows the web application's:
 
 ![scrshot1](./assets/images/pg1.PNG)
 ![scrshot2](./assets/images/pg2.PNG)
-![scrshot3](./assets/images/pgGif.GIF)
 
 ## Acceptance Criteria
 GIVEN I am using a daily planner to create a schedule
