@@ -12,7 +12,7 @@ SO THAT I can manage my time effectively
  page events steal populated in calendar fields. 
 
 ## Gitpage reference
-https://
+https://secretariuss.github.io/day-scheduler/
 
 ## Screen shots
 
