@@ -18,8 +18,8 @@ https://
 
 The following scrshots shows the web application's:
 
-![scrshot1](./assets/images/pg1.PNG)
-![scrshot2](./assets/images/pg2.PNG)
+![scrshot1](./assets/images/pg1.png)
+![scrshot2](./assets/images/pg2.png)
 
 ## Acceptance Criteria
 GIVEN I am using a daily planner to create a schedule
